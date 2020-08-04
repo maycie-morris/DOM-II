@@ -14,7 +14,11 @@ logo.addEventListener("mouseout", event => logo.style.fontSize = "4rem")
 
 const nav = document.querySelector("nav");
 
-nav.addEventListener("click", event => nav.style.borderBottom = "2px dotted blue");
+nav.addEventListener("click", event => {
+  nav.style.borderBottom = "2px dotted blue"
+  preventDefault()
+}
+  );
 
 
 // 4
